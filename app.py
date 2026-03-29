@@ -1,7 +1,7 @@
 import streamlit as st
 import openai
-
-openai.api_key = "PASTE_YOUR_API_KEY"
+import os
+openai.api_key = os.getenv("OPENAI_API_KEY")
 
 st.title("🚀 AI Job Assistant")
 
